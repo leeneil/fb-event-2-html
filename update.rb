@@ -20,9 +20,9 @@ page_id = '1519381238362637'
 token = STDIN.read
 
 if lim < 250
-	url = 'https://graph.facebook.com/v2.5/' + page_id + '/photos/?fields=id,name,likes&limit=' + lim.to_s
+	url = 'https://graph.facebook.com/v2.5/' + page_id + '/photos/?fields=id,name,likes.limit(100)&limit=' + lim.to_s
 else
-	url = 'https://graph.facebook.com/v2.5/' + page_id + '/photos/?fields=id,name,likes&limit=250'
+	url = 'https://graph.facebook.com/v2.5/' + page_id + '/photos/?fields=id,name,likes.limit(100)&limit=250'
 end
 
 url = url + '&access_token=' + token
