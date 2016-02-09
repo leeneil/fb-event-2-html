@@ -7,7 +7,7 @@ require 'time'
 # require './fb2wp'
 # require 'to_xml'
 
-get_pic = false
+get_pic = true
 
 if ARGV.length > 0
 	lim = ARGV[0].to_i
@@ -74,10 +74,15 @@ data_hash["data"].each do |datum|
 	# puts obj_hash["url"]
 
 
-	# obj_hash["full_picture"]
-	if get_pic	
-		open("pics_archive/" + datum["id"]+".jpg", 'wb') do |file|
-			file << photo.read
+	# get picture
+	if get_pic
+		if File.exist?("pics_archive/" + datum["id"]+".jpg")
+			puts "pic skipped"
+		else
+			open("pics_archive/" + datum["id"]+".jpg", 'wb') do |file|
+				file << photo.read
+			end
+			puts "pic downloaded"
 		end
 	end
 
