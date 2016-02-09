@@ -20,9 +20,9 @@ page_id = '1519381238362637'
 token = STDIN.read
 
 if lim < 250
-	url = 'https://graph.facebook.com/v2.5/' + page_id + '/photos/?fields=id,name,likes.limit(100)&limit=' + lim.to_s
+	url = 'https://graph.facebook.com/v2.5/' + page_id + '/photos/?fields=id,name,likes.limit(250)&limit=' + lim.to_s
 else
-	url = 'https://graph.facebook.com/v2.5/' + page_id + '/photos/?fields=id,name,likes.limit(100)&limit=250'
+	url = 'https://graph.facebook.com/v2.5/' + page_id + '/photos/?fields=id,name,likes.limit(250)&limit=250'
 end
 
 url = url + '&access_token=' + token
@@ -121,7 +121,10 @@ open("index.html", 'wb') do |file|
 		file << img_tag
 		file << "<div class=\"caption\">"
 		file << "<h3>" + datum["name"] + "</h3>"
-		file << "</div></div></div>"
+		# file << '<div class="fb-like" data-href="'\
+		# + 'https://www.facebook.com/photo.php?fbid=' + datum["id"]\
+		# + '" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>'
+		file << '</div></div></div>'
 	end
 	file << "</div>"
 
