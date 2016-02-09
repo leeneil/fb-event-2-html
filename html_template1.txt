@@ -4,7 +4,7 @@
     <meta property="og:title" content="年菜大戰4之原味覺醒"/>
     <meta property="og:type" content="article"/>
     <meta property="og:image" content="http://www.dailycold.tw/monkey/pics_archive/10207685889498151.jpg"/>
-    <meta property="og:description" content="現在就上傳你家的年夜飯照片，參加年菜大戰4之原味覺醒。參加就機會獲得由每日一冷贊助的好書一本唷！"/>
+    <meta property="og:description" content="現在就上傳你家的年夜飯照片，參加年菜大戰4之原味覺醒。參加就有機會獲得由每日一冷贊助的好書一本唷！"/>
      <meta property="og:site_name" content="年菜大戰4之原味覺醒"/>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
