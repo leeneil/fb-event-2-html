@@ -1,0 +1,11 @@
+ </div>
+ 	<div class="row">
+	<a href="https://www.facebook.com/events/1519381238362637/" target="_blank" class="btn btn-primary btn-lg btn-block">我也要參戰！</a>
+	</div>
+
+ <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
