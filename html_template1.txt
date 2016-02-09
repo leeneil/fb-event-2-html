@@ -18,12 +18,30 @@
     <![endif]-->
   </head>
   <body>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.5&appId=607219096081910";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
   <div class="container-fluid">
   <div class="row">
     <div class="col-xs-12">
       <div class="page-header">
         <h1>年菜大戰4 <small>原味覺醒</small></h1>
+            <div class="col-md-2 col-md-offset-10">
+              <div class="fb-like" data-href="http://www.dailycold.tw/monkey/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
       </div>
     </div>
+    
   </div>
+  <div class="row">
+
+    </div>
+
+  </div>
+
+
     
